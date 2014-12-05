@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GooglePlus/GooglePlus.h>
+#import <CoreLocation/CoreLocation.h>
+#import <EstimoteSDK/ESTBeaconManager.h>
 
-@interface ViewController : UIViewController
+@class GPPSignInButton;
 
+@interface ViewController : UIViewController <GPPSignInDelegate,CLLocationManagerDelegate,ESTBeaconManagerDelegate>
+
+@property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;
 
 @end
 

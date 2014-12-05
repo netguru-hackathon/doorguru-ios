@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71AF3F4C13173497EA184618 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D862A9E21774AB9881DEAFEE /* libPods.a */; };
 		7C91593E1A31C73900831494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C91593D1A31C73900831494 /* main.m */; };
 		7C9159411A31C73900831494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9159401A31C73900831494 /* AppDelegate.m */; };
 		7C9159441A31C73900831494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9159431A31C73900831494 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		7C9159491A31C73900831494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9159481A31C73900831494 /* Images.xcassets */; };
 		7C91594C1A31C73900831494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C91594A1A31C73900831494 /* LaunchScreen.xib */; };
 		7C9159581A31C73900831494 /* DoorGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9159571A31C73900831494 /* DoorGuruTests.m */; };
+		7C9159621A31CB2000831494 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7C9159611A31CB2000831494 /* Podfile */; };
+		7C9159641A31DC3800831494 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9159631A31DC3700831494 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E452262B0E95040B344C57D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7C9159381A31C73900831494 /* DoorGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C91593C1A31C73900831494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C91593D1A31C73900831494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,10 @@
 		7C9159511A31C73900831494 /* DoorGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9159561A31C73900831494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9159571A31C73900831494 /* DoorGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoorGuruTests.m; sourceTree = "<group>"; };
+		7C9159611A31CB2000831494 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7C9159631A31DC3700831494 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B6EB807FFB0C7F617CF31229 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D862A9E21774AB9881DEAFEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9159641A31DC3800831494 /* CoreLocation.framework in Frameworks */,
+				71AF3F4C13173497EA184618 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		709484D97CF73149C1854F11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C9159631A31DC3700831494 /* CoreLocation.framework */,
+				D862A9E21774AB9881DEAFEE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C91592F1A31C73900831494 = {
 			isa = PBXGroup;
 			children = (
 				7C91593A1A31C73900831494 /* DoorGuru */,
 				7C9159541A31C73900831494 /* DoorGuruTests */,
 				7C9159391A31C73900831494 /* Products */,
+				7D9E838F233FB854FACCFA80 /* Pods */,
+				709484D97CF73149C1854F11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +102,7 @@
 		7C91593A1A31C73900831494 /* DoorGuru */ = {
 			isa = PBXGroup;
 			children = (
+				7C9159651A32021900831494 /* Network */,
 				7C91593F1A31C73900831494 /* AppDelegate.h */,
 				7C9159401A31C73900831494 /* AppDelegate.m */,
 				7C9159421A31C73900831494 /* ViewController.h */,
@@ -119,6 +141,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7C9159651A32021900831494 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		7D9E838F233FB854FACCFA80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C9159611A31CB2000831494 /* Podfile */,
+				5E452262B0E95040B344C57D /* Pods.debug.xcconfig */,
+				B6EB807FFB0C7F617CF31229 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C91595B1A31C73900831494 /* Build configuration list for PBXNativeTarget "DoorGuru" */;
 			buildPhases = (
+				1A7DD92E61594665C2B8B386 /* Check Pods Manifest.lock */,
 				7C9159341A31C73900831494 /* Sources */,
 				7C9159351A31C73900831494 /* Frameworks */,
 				7C9159361A31C73900831494 /* Resources */,
+				7994214F617BA342A5250BEC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +209,11 @@
 				TargetAttributes = {
 					7C9159371A31C73900831494 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					7C9159501A31C73900831494 = {
 						CreatedOnToolsVersion = 6.1;
@@ -201,6 +247,7 @@
 			files = (
 				7C9159471A31C73900831494 /* Main.storyboard in Resources */,
 				7C91594C1A31C73900831494 /* LaunchScreen.xib in Resources */,
+				7C9159621A31CB2000831494 /* Podfile in Resources */,
 				7C9159491A31C73900831494 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +260,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A7DD92E61594665C2B8B386 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7994214F617BA342A5250BEC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C9159341A31C73900831494 /* Sources */ = {
@@ -280,7 +360,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grzegorz Lesiak (2X4V2AC2BY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grzegorz Lesiak (2X4V2AC2BY)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -300,6 +381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f800aa77-531c-4bd2-8ddc-b896d47a65e0";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -321,7 +403,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grzegorz Lesiak (2X4V2AC2BY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grzegorz Lesiak (2X4V2AC2BY)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -334,6 +417,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f800aa77-531c-4bd2-8ddc-b896d47a65e0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -341,21 +425,27 @@
 		};
 		7C91595C1A31C73900831494 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E452262B0E95040B344C57D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grzegorz Lesiak (2X4V2AC2BY)";
 				INFOPLIST_FILE = DoorGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f800aa77-531c-4bd2-8ddc-b896d47a65e0";
 			};
 			name = Debug;
 		};
 		7C91595D1A31C73900831494 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EB807FFB0C7F617CF31229 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grzegorz Lesiak (2X4V2AC2BY)";
 				INFOPLIST_FILE = DoorGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f800aa77-531c-4bd2-8ddc-b896d47a65e0";
 			};
 			name = Release;
 		};
@@ -412,6 +502,7 @@
 				7C91595D1A31C73900831494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C91595E1A31C73900831494 /* Build configuration list for PBXNativeTarget "DoorGuruTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +511,7 @@
 				7C9159601A31C73900831494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
